@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #19191f;
+}
+
+#Positivo {
+  color: #12b586;
+}
+
+#Negativo {
+  color: #cd4855;
+}
+
+.App {
+  gap: 2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    color: white;
+    margin-bottom: 2rem;
+
+    span {
+      color: #029ff9;
+    }
+  }
+
+  .Container {
+    width: 900px;
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .List {
+      width: 100%;
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: center;
+      justify-content: space-between;
+
+      .Item {
+        .Card {
+          gap: 1rem;
+          width: 200px;
+          display: flex;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          flex-direction: column;
+          background-color: #24252b;
+          box-shadow: 0rem 2rem 2rem #0d0d1062;
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+              color: white;
+            }
+
+            .Icon {
+              color: white;
+            }
+          }
+          h2 {
+            color: #f3a74c;
+          }
+        }
+      }
+    }
+
+    .Panel {
+      display: flex;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+      background-color: #24252b;
+      justify-content: space-between;
+      box-shadow: 0rem 2rem 2rem #0d0d1062;
+
+      .InputText {
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+
+        label {
+          gap: 0.5rem;
+          display: flex;
+          color: white;
+          flex-direction: column;
+
+          input {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 160px;
+            height: 20px;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: #19191f;
+          }
+        }
+      }
+
+      .InputCheckbox {
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+
+        label {
+          gap: 0.5rem;
+          display: flex;
+          color: white;
+          flex-direction: row;
+        }
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 0.5rem;
+        color: white;
+        border-radius: 0.5rem;
+        background-color: #767be6;
+
+        &:hover {
+          background-color: #5f64b9;
+        }
+      }
+    }
+
+    .Content {
+      width: 930px;
+      height: 200px;
+      display: flex;
+      overflow-y: scroll;
+      flex-direction: column;
+
+      &::-webkit-scrollbar {
+        background-color: #545454;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #aaaaaa;
+      }
+
+      table {
+        width: 900px;
+        font-size: 0.9rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        border-collapse: collapse;
+        background-color: #24252b;
+        box-shadow: 0rem 2rem 2rem #0d0d1062;
+
+        thead {
+          tr {
+            background-color: #029ff9;
+
+            th {
+              color: white;
+              padding: 12px 15px;
+              border-bottom: 1px solid #19191f;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              color: white;
+              padding: 12px 15px;
+              border-bottom: 1px solid #19191f;
+
+              button {
+                border: none;
+                cursor: pointer;
+                display: flex;
+                transition: 0.3s;
+                font-size: 1rem;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                padding: 0.3rem;
+                border-radius: 0.5rem;
+                background-color: #e15563;
+
+                &:hover {
+                  background-color: #cd4855;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
